@@ -9,3 +9,8 @@ jobReducer
 export default configureStore({
    reducer: rootReducer
 })
+// şu yöntemi de yapabiliriz. yukarıdaki ile  aynı anlama gelir
+
+// export const store =  configureStore({
+//    reducer: rootReducer
+// })

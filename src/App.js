@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./component/header";
-import JobList from "./pages/jobList";
+import JobList from "./pages/JobList";
 import AddJob from "./pages/addJob";
 
 function App() {
