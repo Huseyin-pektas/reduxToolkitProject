@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setJob } from '../redux/jobSlice';
+import FilterComponent from '../component/filter';
 
 
 const BaseURL = "http://localhost:3030/jobs"
@@ -9,7 +10,7 @@ const BaseURL = "http://localhost:3030/jobs"
 const JobList = () => {
 // store abone olacağım useselector ile
 const selector = useSelector((state)=>state.jobReducer)
-console.log(selector,"selector")
+// console.log(selector,"selector")
 
 // burada ise useDispact fonksiyonunu kullanıp verileri reducere göndermek
 const dispatch = useDispatch();
@@ -26,12 +27,13 @@ const dispatch = useDispatch();
 
   return (
     <>
-    <h2>{selector.jobs.length}   İş Bulundu</h2>
+     <FilterComponent/>
+    <h2>{selector.filteredJobs.length}   İş Bulundu</h2>
     <section className='list-section'>
       {/*  veriler çekilmişse ekrana bas */}
       {!selector.initialized ? (
         <p>loading</p>
-      ):(selector.jobs.map((job,index)=>
+      ):(selector.filteredJobs.map((job,index)=>
         <div className="job-card" key={job.id}>
         {/* kartın üst kısmı */}
         <div className="head">
