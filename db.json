@@ -91,21 +91,12 @@
       "date": "3/28/2023"
     },
     {
-      "id": "1720346169425",
-      "position": "saas",
-      "location": "asf",
-      "company": "asf",
-      "status": "",
-      "type": "",
-      "date": "07/07/2024"
-    },
-    {
-      "id": 1720349655133,
-      "position": "React Developer",
-      "location": "izmir",
-      "company": "udemig",
+      "id": 1720354415262,
+      "position": "React Native ",
+      "location": "İstanbul",
+      "company": "Udemig",
       "status": "Devam Ediyor",
-      "type": "Yarı Zaman",
+      "type": "Uzaktan",
       "date": "07/07/2024"
     }
   ]

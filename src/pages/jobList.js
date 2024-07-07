@@ -28,7 +28,7 @@ const dispatch = useDispatch();
   return (
     <>
      <FilterComponent/>
-    <h2>{selector.filteredJobs.length}   İş Bulundu</h2>
+    <h2 style={{marginLeft:50}}>{selector.filteredJobs.length}   İş Bulundu</h2>
     <section className='list-section'>
       {/*  veriler çekilmişse ekrana bas */}
       {!selector.initialized ? (
